@@ -4,3 +4,11 @@ Console.WriteLine("Введите строку: ");
 
 string inputString = Console.ReadLine();
 string[] convertibleArray = inputString.Split(' ', StringSplitOptions.RemoveEmptyEntries); 
+
+Console.WriteLine("Изначальный массив: ");
+
+for (int i = 0; i < convertibleArray.Length; i++)
+{
+    Console.Write(convertibleArray[i] + " ");
+}
+Console.WriteLine();
