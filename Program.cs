@@ -12,3 +12,20 @@ for (int i = 0; i < convertibleArray.Length; i++)
     Console.Write(convertibleArray[i] + " ");
 }
 Console.WriteLine();
+
+Console.WriteLine("Готовый массив (длинна не более 3 символа): ");
+
+var resultArray = new string[convertibleArray.Length];  
+var size = 0;
+
+Console.Write($"[");
+foreach (var value in convertibleArray)
+{
+if (value.Length <= 3)
+   {
+    resultArray[size] = value;
+    Console.Write($"{resultArray[size]}, ");
+    size++;
+   }
+}
+Console.Write($"]");
